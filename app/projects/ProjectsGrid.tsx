@@ -37,7 +37,7 @@ export default function ProjectsGrid({
             Featured Projects
           </h2>
           <p className="text-text-muted mt-2">
-            Some works I’m proud of recently.
+            Some works I'm proud of recently.
           </p>
 
           <div className="flex flex-wrap gap-3 mt-8 justify-center">

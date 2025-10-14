@@ -1,10 +1,4 @@
-import {
-  ArrowRight,
-  Cpu,
-  Database,
-  LayoutList,
-  Link as LinkIcon,
-} from "lucide-react";
+import { Cpu, Database, LayoutList, Link as LinkIcon } from "lucide-react";
 
 export type Skill = {
   id: string;

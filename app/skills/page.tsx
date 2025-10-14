@@ -5,15 +5,8 @@ import Link from "next/link";
 import { useState, useMemo } from "react";
 import { SKILLS } from "@/app/skills/sections/SkillsData";
 import SkillCard from "./sections/SkillCard";
-import StackMap from "./sections/StackMap";
 import { Button } from "@/components/ui/Button";
-import {
-  ArrowRight,
-  Cpu,
-  Database,
-  LayoutList,
-  Link as LinkIcon,
-} from "lucide-react";
+import { ArrowRight, Cpu, Database, LayoutList } from "lucide-react";
 import StackMapVisual from "./sections/StackMapVisual";
 import FeaturedCapabilities from "./sections/FeaturedCap";
 

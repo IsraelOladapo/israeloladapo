@@ -60,7 +60,7 @@ export default function AboutSection() {
             A little about me
           </h2>
           <p className="text-text-muted leading-relaxed mb-6 text-lg">
-            I’m Israel Oladapo by name, a full-stack developer passionate about
+            I'm Israel Oladapo by name, a full-stack developer passionate about
             building sleek, functional, and meaningful web experiences. My work
             blends performance with aesthetics, creating solutions that not only
             work great but feel great to use. I believe in clean code,
@@ -69,7 +69,7 @@ export default function AboutSection() {
           </p>
 
           <p className="text-text-muted leading-relaxed mb-8">
-            When I’m not coding, I love exploring new technologies, refining my
+            When I'm not coding, I love exploring new technologies, refining my
             workflows, and helping others bring their digital ideas to life.
           </p>
 

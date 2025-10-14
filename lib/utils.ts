@@ -17,9 +17,9 @@ export const whatsappUrl = (phone: string) => {
   return `https://wa.me/${cleaned.replace(/^\+/, "")}`;
 };
 
-import { clsx } from "clsx";
+import { type ClassValue, clsx } from "clsx";
 import { twMerge } from "tailwind-merge";
 
-export function cn(...inputs: any[]) {
+export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
 }
