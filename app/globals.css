@@ -1,26 +1,38 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+/* @layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: "Manrope", sans-serif;
   }
+  body {
+    background-color: #f8fafc; /* light neutral background */
+/* color: #0f172a; */
+/* } */
+/* }  */
+
+@theme {
+  /* Light Mode */
+  --color-background: #f5f6f7; /* soft neutral base */
+  --color-surface: #ffffff; /* for cards, sections */
+  --color-txt: #09090b;
+  --color-text-muted: #52525b;
+  --color-primary: #7b33ed; /* rich purple */
+  --color-primary-hover: #6d28d9;
+  --color-secondary: #1fcfe5; /* cyan with a hint of warmth */
+  --color-secondary-hover: #06b6d4;
+  --color-border: #e4e4e7;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.dark {
+  /* Dark Mode */
+  --color-background: #0b0b0c;
+  --color-surface: #18181b;
+  --color-txt: #e4e4e7;
+  --color-text-muted: #a1a1aa;
+  --color-primary: #a78bfa; /* lighter purple for dark BG */
+  --color-primary-hover: #8b5cf6;
+  --color-secondary: #0bc1dc; /* maintains balance */
+  --color-secondary-hover: #06b6d4;
+  --color-border: #27272a;
 }
