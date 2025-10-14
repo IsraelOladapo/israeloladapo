@@ -83,7 +83,9 @@ export default function ProjectsGrid({
                 </div>
 
                 <div className="p-5">
-                  <h3 className="text-lg font-semibold">{proj.title}</h3>
+                  <h3 className="text-lg font-semibold text-secondary">
+                    {proj.title}
+                  </h3>
                   <p className="text-text-muted text-sm mt-2 line-clamp-2">
                     {proj.shortDescription}
                   </p>

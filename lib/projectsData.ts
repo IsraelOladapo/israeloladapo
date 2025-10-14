@@ -1,7 +1,9 @@
 import { StaticImageData } from "next/image";
 import myshopDark from "@/public/projects/myshop-dark.png";
 import myshopLight from "@/public/projects/myshop-light.png";
-import portfolio from "@/public/projects/Profile avatar.jpg";
+import portfolioDark from "@/public/projects/my-portfolio.png";
+import portfolioLight from "@/public/projects/my-port-light.png";
+
 import aiwriter from "@/public/projects/Profile avatar.jpg";
 import dashlite from "@/public/projects/Profile avatar.jpg";
 
@@ -33,14 +35,14 @@ export const projectsData: Project[] = [
   },
   {
     id: "portfolio",
-    title: "Iszie Portfolio",
+    title: "Portfolio",
     shortDescription:
       "Minimal, fast, and animated portfolio built with Next.js and TailwindCSS.",
     longDescription:
       "This project is my personal portfolio — a modern, responsive site showcasing my work and skills. It’s built with Next.js 15, styled using TailwindCSS v4.1, and powered by Framer Motion for smooth micro-interactions. Every section is modular and reusable, from the Hero to the Contact page.",
     tech: ["Next.js", "TailwindCSS", "Framer Motion"],
     category: "Frontend",
-    image: [portfolio],
+    image: [portfolioDark, portfolioLight],
     github: "https://github.com/IsraelOladapo",
   },
   {
