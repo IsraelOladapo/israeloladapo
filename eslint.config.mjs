@@ -20,7 +20,7 @@ const eslintConfig = [
       "next-env.d.ts",
     ],
     rules: {
-      "react/no-unescaped-entities": "off", // ✅ disable the error you're seeing
+      "react/no-unescaped-entities": "off",
     },
   },
 ];

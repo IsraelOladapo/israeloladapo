@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@theme {
+  /* Light Mode */
+  --color-background: #f5f6f7; /* soft neutral base */
+  --color-surface: #ffffff; /* for cards, sections */
+  --color-txt: #09090b;
+  --color-text-muted: #52525b;
+  --color-primary: #7b33ed; /* rich purple */
+  --color-primary-hover: #6d28d9;
+  --color-secondary: #1fcfe5; /* cyan with a hint of warmth */
+  --color-secondary-hover: #06b6d4;
+  --color-border: #e4e4e7;
+}
+
+.dark {
+  /* Dark Mode */
+  --color-background: #0b0b0c;
+  --color-surface: #18181b;
+  --color-txt: #e4e4e7;
+  --color-text-muted: #a1a1aa;
+  --color-primary: #a78bfa; /* lighter purple for dark BG */
+  --color-primary-hover: #8b5cf6;
+  --color-secondary: #0bc1dc; /* maintains balance */
+  --color-secondary-hover: #06b6d4;
+  --color-border: #27272a;
+}

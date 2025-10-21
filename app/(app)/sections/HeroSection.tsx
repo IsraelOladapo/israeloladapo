@@ -29,21 +29,6 @@ export default function HeroSection() {
       />
 
       <div className="container mx-auto px-6 text-center flex flex-col items-center justify-center gap-8 relative z-10">
-        {/* Floating Avatar */}
-        {/* <motion.div
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className="relative w-32 h-32 rounded-full overflow-hidden border-4 border-primary shadow-lg"
-        >
-          <Image
-            src="/Profile avatar.jpg"
-            alt="Iszie Avatar"
-            fill
-            className="object-cover"
-          />
-        </motion.div> */}
-
         {/* Heading */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -52,8 +37,8 @@ export default function HeroSection() {
           className="max-w-3xl"
         >
           <h1 className="text-4xl sm:text-6xl font-bold leading-tight mb-4 text-txt">
-            Hey, I'm <span className="text-primary">Iszie</span> a full-stack
-            developer building modern web experiences.
+            Hey, I'm <span className="text-primary">Iszie</span> a Web App
+            Developer building modern web experiences.
           </h1>
           <p className="text-text-muted text-lg sm:text-xl max-w-2xl mx-auto">
             Crafting beautiful, scalable products with TypeScript, Next.js,
