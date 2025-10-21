@@ -87,7 +87,7 @@ export default function PostsSection() {
           No posts yet — create one!
         </div>
       ) : (
-        <div className="grid grid-cols-2 gap-4">
+        <div className="grid sm:grid-cols-2 gap-4">
           {posts!.map((p) => (
             <article
               key={p.id}

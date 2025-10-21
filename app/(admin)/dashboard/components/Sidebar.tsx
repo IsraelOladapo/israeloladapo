@@ -2,12 +2,12 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Home, FileText, Settings, LogOut, Menu } from "lucide-react";
+import { Home, FileText, Settings, Menu } from "lucide-react";
 import SidebarItem from "./SidebarItem";
 
 const navItems = [
-  { name: "Overview", icon: Home, path: "/dashboard" },
-  { name: "Posts", icon: FileText, path: "/blog" },
+  { name: "Overview", icon: <Home size={20} />, path: "/dashboard" },
+  { name: "Posts", icon: <FileText size={20} />, path: "/blog" },
   // { name: "Settings", icon: Settings, path: "/dashboard/settings" },
 ];
 
@@ -57,7 +57,7 @@ export default function Sidebar() {
       <div className="mt-auto">
         <SidebarItem
           name="Settings"
-          icon={Settings}
+          icon={<Settings size={20} />}
           path="#settings"
           collapsed={!isExpanded}
         />

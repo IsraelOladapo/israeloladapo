@@ -7,12 +7,12 @@ import { cn } from "@/lib/utils"; // optional helper if you have one
 
 export default function SidebarItem({
   name,
-  icon: Icon,
+  icon,
   path,
   collapsed,
 }: {
   name: string;
-  icon: any;
+  icon: React.ReactElement;
   path: string;
   collapsed: boolean;
 }) {
@@ -30,7 +30,8 @@ export default function SidebarItem({
             : "text-gray-600 hover:bg-gray-100 hover:text-gray-900"
         )}
       >
-        <Icon size={20} />
+        {/* <Icon size={20} /> */}
+        <p>{icon}</p>
         {!collapsed && (
           <motion.span
             initial={{ opacity: 0, x: -10 }}
