@@ -1,6 +1,6 @@
 import { LayoutList } from "lucide-react";
 import { motion } from "framer-motion";
-import type { Skill } from "@/app/skills/sections/SkillsData";
+import { Skill } from "./SkillsData";
 import ConfidenceBar from "./ConfidenceBar";
 
 export default function SkillCard({
