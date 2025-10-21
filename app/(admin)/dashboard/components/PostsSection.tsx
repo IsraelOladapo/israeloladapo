@@ -69,12 +69,12 @@ export default function PostsSection() {
             New Post
           </Link>
 
-          <Link
-            href="/dashboard/posts/ai-wizard"
+          <div
+            // href="/dashboard/posts/ai-wizard"
             className="inline-flex items-center gap-2 bg-[var(--color-secondary)] text-white px-4 py-2 rounded-lg hover:bg-[var(--color-secondary-hover)]"
           >
             AI Wizard
-          </Link>
+          </div>
         </div>
       </div>
 
