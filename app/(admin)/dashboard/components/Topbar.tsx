@@ -2,11 +2,12 @@
 "use client";
 
 import { supabase } from "@/lib/supabaseClient";
+import type { User } from "@supabase/supabase-js";
 import { useRouter } from "next/navigation";
 import { LogOut, Moon, Sun } from "lucide-react";
 import { useThemeCtx } from "@/context/ThemeContext";
 
-export default function Topbar({ user }: { user: any }) {
+export default function Topbar({ user }: { user: User | null }) {
   const router = useRouter();
   const { theme, toggleTheme } = useThemeCtx();
 
