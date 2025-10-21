@@ -63,7 +63,7 @@ export default function PostsSection() {
         <div className="flex items-center gap-2">
           <Link
             href="/dashboard/posts/new"
-            className="inline-flex items-center gap-2 bg-[var(--color-primary)] text-white px-4 py-2 rounded-lg hover:bg-[var(--color-primary-hover)]"
+            className="inline-flex items-center gap-2 bg-[var(--color-primary)] text-white px-4 py-1 rounded-lg hover:bg-[var(--color-primary-hover)]"
           >
             <PlusCircle size={16} />
             New Post
@@ -71,7 +71,7 @@ export default function PostsSection() {
 
           <div
             // href="/dashboard/posts/ai-wizard"
-            className="inline-flex items-center gap-2 bg-[var(--color-secondary)] text-white px-4 py-2 rounded-lg hover:bg-[var(--color-secondary-hover)]"
+            className="inline-flex items-center gap-2 bg-[var(--color-secondary)] text-white px-4 py-1 rounded-lg hover:bg-[var(--color-secondary-hover)]"
           >
             AI Wizard
           </div>
