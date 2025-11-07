@@ -14,11 +14,12 @@ export default function LoginPage() {
     e.preventDefault();
     setLoading(true);
     try {
-      const { error } = await supabase.auth.signInWithPassword({
+      const { data, error } = await supabase.auth.signInWithPassword({
         email: email.trim(),
         password,
       });
       if (error) throw error;
+      // console.log(data);
       router.push("/dashboard");
     } catch (error) {
       console.error("Unexpected error during sign-in:", error);

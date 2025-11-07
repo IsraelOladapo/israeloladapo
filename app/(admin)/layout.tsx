@@ -1,6 +1,6 @@
 import "./globals.css";
 import { createClient } from "@/lib/supabaseServer";
-// import { redirect } from "next/navigation";
+import { redirect } from "next/navigation";
 import Sidebar from "./dashboard/components/Sidebar";
 import Topbar from "./dashboard/components/Topbar";
 import { ThemeProvider } from "@/context/ThemeContext";
@@ -15,12 +15,13 @@ export default async function DashboardLayout({
   const {
     data: { user },
   } = await supabase.auth.getUser();
+  // console.log(user);
 
-  // const adminEmail = process.env.ADMIN_EMAIL;
+  const adminEmail = process.env.ADMIN_EMAIL;
 
-  // if (!user || user.email !== adminEmail) {
-  //   redirect("/login");
-  // }
+  if (!user || user.email !== adminEmail) {
+    redirect("/login");
+  }
 
   return (
     <html lang="en">

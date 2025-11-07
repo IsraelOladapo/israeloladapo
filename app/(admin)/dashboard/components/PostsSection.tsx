@@ -91,20 +91,22 @@ export default function PostsSection() {
           {posts!.map((p) => (
             <article
               key={p.id}
-              className="bg-surface border border-border rounded-xl p-4 flex flex-col gap-4"
+              className="bg-surface border border-border rounded-xl pb-4 p-2 flex flex-col gap-4 max-w-[250px]"
             >
               {p.cover_url && (
                 <img
                   src={p.cover_url}
                   alt={p.title}
-                  className="w-36 h-24 object-cover rounded-md"
+                  className="w-fit h-fit object-cover rounded-md"
                 />
               )}
 
               <div className="">
                 <div className="flex flex-col">
                   <div>
-                    <h3 className="text-lg font-semibold">{p.title}</h3>
+                    <h3 className="text-lg font-semibold truncate">
+                      {p.title}
+                    </h3>
                     <p className="text-sm text-text-muted line-clamp-2">
                       {p.excerpt}
                     </p>
