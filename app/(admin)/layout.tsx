@@ -12,24 +12,25 @@ export default async function DashboardLayout({
 }) {
   const supabase = await createClient();
 
-  const {
-    data: { session },
-    error,
-  } = await supabase.auth.getSession();
+  // const {
+  //   data: { session },
+  //   error,
+  // } = await supabase.auth.getSession();
 
-  console.log("SESSION IN PROD:", session);
-  console.log("SESSION ERROR:", error);
-
-  const {
-    data: { user },
-  } = await supabase.auth.getUser();
-  console.log(user);
+  // console.log("SESSION IN PROD:", session);
+  // console.log("SESSION ERROR:", error);
+  // console.log(user);
 
   // const adminEmail = process.env.ADMIN_EMAIL;
 
-  // if (!user || user.email !== adminEmail) {
-  //   redirect("/login");
-  // }
+  const {
+    data: { user },
+    error,
+  } = await supabase.auth.getUser();
+
+  if (error || !user) {
+    redirect("/login");
+  }
 
   return (
     <html lang="en">
