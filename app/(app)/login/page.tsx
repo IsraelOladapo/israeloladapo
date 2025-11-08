@@ -20,7 +20,7 @@ export default function LoginPage() {
       });
       if (error) throw error;
       // console.log(data);
-      router.push("/dashboard");
+      router.replace("/dashboard");
     } catch (error) {
       console.error("Unexpected error during sign-in:", error);
       setMessage(`${error}`);
